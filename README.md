@@ -24,4 +24,4 @@ Este aplicativo de console permite ao usuário escolher entre diferentes pares d
    cd challenge-conversor
 ## Demonstração
 
-![Demonstração do Conversor](apresentao-ezgif.com-video-to-gif-converter.gif)
+![Demonstração do Conversor](docs/apresentao-ezgif.com-video-to-gif-converter.gif)
