@@ -1,13 +1,13 @@
 package com.conversor.main;
 
-import com.conversor.http.ApiClient;
 import com.conversor.service.CurrencyConverter;
 import com.conversor.util.UserMenu;
 
-import java.util.List;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         while (true) {
             UserMenu.displayOptions();
             int option = UserMenu.getUserOption();
@@ -21,6 +21,9 @@ public class Main {
 
 
             CurrencyConverter converter = new CurrencyConverter();
+            FileWriter fileWriter = new FileWriter("conversion_log.txt");
+            fileWriter.write(converter.convert(baseCode, targetCode, amount).toString());
+            fileWriter.close();
 
             System.out.println(converter.convert(baseCode, targetCode, amount));
         }
