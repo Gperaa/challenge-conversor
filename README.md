@@ -22,3 +22,6 @@ Este aplicativo de console permite ao usuário escolher entre diferentes pares d
    ```bash
    git clone https://github.com/Gperaa/challenge-conversor.git
    cd challenge-conversor
+## Demonstração
+
+![Demonstração do Conversor](apresentao-ezgif.com-video-to-gif-converter.gif)
