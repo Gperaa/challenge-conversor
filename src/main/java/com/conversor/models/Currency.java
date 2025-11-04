@@ -15,7 +15,13 @@ public class Currency {
 
     @Override
     public String toString() {
-        return String.format("CONVERSÃO DE %s PARA %s, TAXA DE CONVERSÃO: %.2f, RESULTADO DA CONVERSÃO: %.2f",
+        return String.format("""
+                        CONVERSÃO DE %s PARA %s\s
+                        -------------------------
+                        TAXA DE CONVERSÃO: %.2f
+                        -------------------------
+                        RESULTADO DA CONVERSÃO: %.2f
+                       \s""",
                 baseCode, targetCode, conversionRate, conversionResult);
     }
 }
