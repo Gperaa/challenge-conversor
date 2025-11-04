@@ -21,9 +21,6 @@ public class Main {
 
 
             CurrencyConverter converter = new CurrencyConverter();
-            FileWriter fileWriter = new FileWriter("conversion_log.txt");
-            fileWriter.write(converter.convert(baseCode, targetCode, amount).toString());
-            fileWriter.close();
 
             System.out.println(converter.convert(baseCode, targetCode, amount));
         }
